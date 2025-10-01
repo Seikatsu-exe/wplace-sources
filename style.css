@@ -30,7 +30,7 @@ body {
 }
 .img {
 max-width:95%;
-max-height:95%;
+height: auto;
 }
 .highlight {
   cursor: pointer;
