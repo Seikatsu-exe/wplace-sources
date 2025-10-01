@@ -1,0 +1,101 @@
+:root {
+  /* TODO: Use these vars to make light theme */
+  --background-color: #181926;
+  --background-color-semi-transparent: rgba(24, 25, 38, 0.9);
+  /*24 instead of 50 */
+  --profile-border: rgba(36, 39, 58, 0.9);
+  --text-color: #cad3f5;
+  --purple: #c6a0f6;
+  --green: #a6da95;
+  --lavender: #b7bdf8;
+  --blue: #8aadf4;
+  --comment: #8087a2;
+  /* WIP Light theme colors 
+      --background-color: #f2d5cf;
+      --background-color-semi-transparent: rgba(242, 213, 207, 0.9);
+      --profile-border: rgba(239, 241, 245, 0.9);
+      --text-color: #4c4f69;
+      --purple: #8839ef;
+      --green: #40a02b;
+      --lavender: #7287fd;
+      --blue: #1e66f5;
+      --comment: #8c8fa1;
+  
+  
+      */
+}
+body {
+  background: var(--background-color);
+  transition: 0.2s ease-in-out;
+}
+
+.highlight {
+  cursor: pointer;
+  color: var(--purple);
+  transition: 0.2s ease-in-out;
+}
+.highlight:hover {
+  color: var(--lavender);
+  transition: 0.2s ease-in-out;
+}
+.card {
+  transition: 0.2s ease-in-out;
+  font-family: "Courier New", "Lucida Console", monospace;
+  background: var(--background-color-semi-transparent);
+  text-align: center;
+  color: var(--text-color);
+  border-radius: 1em;
+  padding: 2em;
+}
+
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+canvas {
+  display: block;
+  position: fixed;
+  z-index: -1;
+}
+
+#particles-js canvas {
+  display: block;
+  vertical-align: bottom;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  -webkit-transition: opacity 0.8s ease, -webkit-transform 1.4s ease;
+  transition: opacity 0.8s ease, transform 1.4s ease;
+}
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -10;
+  top: 0;
+  left: 0;
+}
+
+hr {
+  border-top: 2px solid #5f526f;
+  border-bottom: 2px solid #5f526f;
+  width: 75%;
+}
+
+#overlay {
+  transition: 0.5s ease-in-out;
+  position: fixed; /* Sit on top of the page content */
+  visibility: hidden; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
