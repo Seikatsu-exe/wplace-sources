@@ -28,7 +28,10 @@ body {
   background: var(--background-color);
   transition: 0.2s ease-in-out;
 }
-
+.img {
+max-width:95%;
+max-height:95%;
+}
 .highlight {
   cursor: pointer;
   color: var(--purple);
