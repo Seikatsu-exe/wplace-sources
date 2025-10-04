@@ -32,6 +32,7 @@ body {
 }
 .img {
 object-fit: contain; 
+max-width: 100% !important;
 }
 .highlight {
   cursor: pointer;
