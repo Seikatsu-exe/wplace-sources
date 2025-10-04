@@ -1,7 +1,7 @@
 :root {
   /* TODO: Use these vars to make light theme */
   --background-color: #181926;
-  --background-color-semi-transparent: rgba(24, 25, 38, 0.9);
+  --background-color-semi-transparent: rgba(24, 25, 38, 0.7);
   /*24 instead of 50 */
   --profile-border: rgba(36, 39, 58, 0.9);
   --text-color: #cad3f5;
