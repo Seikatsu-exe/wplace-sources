@@ -27,6 +27,7 @@
 body {
   background: var(--background-color);
   transition: 0.2s ease-in-out;
+  overflow-x: hidden;
 }
 .img {
 width: auto;
@@ -48,7 +49,7 @@ height: auto;
   background: var(--background-color-semi-transparent);
   text-align: center;
   color: var(--text-color);
-  width: auto;
+  max-width: 95%;
   /*
   border-radius: 1em;
   padding: 2em;
