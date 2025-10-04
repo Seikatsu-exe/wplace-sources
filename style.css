@@ -28,12 +28,14 @@ body {
   background: var(--background-color);
   transition: 0.2s ease-in-out;
   overflow-x: hidden;
+  max-width: 100%;
 }
+/*
 .img {
 width: auto;
-max-width:95%;
 height: auto;
 }
+*/
 .highlight {
   cursor: pointer;
   color: var(--purple);
@@ -49,11 +51,9 @@ height: auto;
   background: var(--background-color-semi-transparent);
   text-align: center;
   color: var(--text-color);
-  max-width: 95%;
-  /*
   border-radius: 1em;
   padding: 2em;
-  */
+  
 }
 
 
